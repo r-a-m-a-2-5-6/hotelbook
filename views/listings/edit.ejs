@@ -1,0 +1,37 @@
+<% layout('layouts/boilerplate') -%>
+<body>
+    <div class="row">
+        <div class="col-8 offset-2">
+    <h2 class="mt-3">Edit your Listings</h2>
+    <form action="/listings/<%=element.id%>?_method=PUT" method="POST">
+        <div class="mb-3">
+            <label class="form-label" for="title">Title :</label>
+            <input type="text" class="form-control" name="title" id="title" value="<%= element.title %>" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="description">Description :</label>
+            <textarea type="text" class="form-control" name="description" id="description"  required><%= element.description %></textarea>
+        </div>
+        <div class="row">
+            <div class="mb-3 col-md-4">
+                <label class="form-label" for="location">Location :</label>
+                <input type="text" class="form-control" name="location" id="location" value="<%= element.location %>" required>
+            </div>
+            <div class="mb-3 col-md-8">
+                <label class="form-label" for="country">Country :</label>
+                <input type="text" class="form-control" name="country" id="country" value="<%= element.country %>" required>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="price">Price :</label>
+            <input type="number" class="form-control" name="price" id="price"value="<%= element.price %>"required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="image">Image :</label>
+            <input type="text" class="form-control" name="image" id="image" value="<%= element.image %>" required>
+        </div>
+        <button class="btn btn-dark add-btn">Edit</button>
+    </form>
+</div>
+</div>
+</body>

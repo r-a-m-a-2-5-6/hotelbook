@@ -1,0 +1,90 @@
+body{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+.container{
+    flex: 1;
+}
+.navbar{
+    background-color: white;
+    line-height: 40px;
+}
+
+.fa-compass{
+    color: #ee112f !important;
+    font-size: 26px;
+}
+
+.nav-link {
+    color: #222222 !important;
+}
+
+footer{
+    background-color: rgb(177, 173, 168,0.3);
+  
+}
+.f-info{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    height: 8rem;
+    justify-content: center;
+    align-items: space-evenly;
+    vertical-align: middle;
+}
+.f-info-terms , .f-info-sociallinks, .f-info-brand{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.f-info-sociallinks i {
+    font-size: 1.4rem;
+    margin-right: 1rem;
+}
+.f-info-terms a{
+    text-decoration: none;
+    color: #222222;
+}
+.f-info-terms a:hover{
+    text-decoration: underline;
+}
+
+.row a{
+    text-decoration: none;
+}
+.card{
+    margin-bottom: 1rem !important;
+    border: none !important;
+}
+
+.card-img-top{
+    height: 16rem;
+    border-radius: 0.5rem !important;
+}
+
+.card-body{
+    padding: 0 !important ;
+    margin: 0;
+}
+.card-img-overlay:hover{
+    background-color: white;
+    opacity: 0.2;
+}
+
+.img-container img{
+    width: 60%;
+    height: 350px;
+    border-radius: 5px;
+}
+
+.add-btn{
+    background-color: #ee112f !important;
+    border: none !important;
+    margin-bottom: 2rem;
+}
+
+.buttons{
+    display: flex;
+}
