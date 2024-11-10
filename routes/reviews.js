@@ -4,7 +4,7 @@ const wrapAsync = require("../utils/wrapasync.js");
 const Listing = require("../models/init.js");
 const methodOverride = require("method-override");
 const Review = require("../models/review.js");
-const { isLoggedIn } = require("../../middlewares/middleware.js");
+const { isLoggedIn } = require("../middlewares/middleware.js");
 
 
 

@@ -6,7 +6,7 @@ const methodOverride = require("method-override");
 const Review = require("../models/review.js");
 const flash= require("connect-flash");
 const session = require("express-session");
-const { isLoggedIn } = require("../../middlewares/middleware.js");
+const { isLoggedIn } = require("../middlewares/middleware.js");
 
 
 //index route
@@ -74,7 +74,6 @@ res.redirect("/listings");
 router.get("/:id",wrapAsync( async (req,res)=> {
 let {id}=req.params;
 const listings = await Listing.findById(id).populate("reviews").populate("owner");
-console.log(listings)
 res.render("listings/show.ejs",{listings})
 }))
 
