@@ -15,7 +15,22 @@
           <li class="nav-item">
             <a class="nav-link" href="/listings/new">Add New Listing</a>
           </li>
-        </ul>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+         <%   if(!currUser){%>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/users/signup">SignUp</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/users/login" >Log In</a>
+          </li>
+          <% }%>
+          <%   if(currUser){%>
+          <li class="nav-item">
+            <a class="nav-link" href="/users/logout">Log Out</a>
+          </li>
+          <% }%>
       </div>
     </div>
   </nav>

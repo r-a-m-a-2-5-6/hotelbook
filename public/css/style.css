@@ -1,3 +1,4 @@
+
 body{
     display: flex;
     height: 100vh;
@@ -87,4 +88,16 @@ footer{
 
 .buttons{
     display: flex;
+}
+
+.review-card{
+    margin-bottom: 10px;
+    
+}
+.review-card p{
+    margin: 0px;
+}
+
+.review-card #review-date{
+    font-size: 13px;
 }

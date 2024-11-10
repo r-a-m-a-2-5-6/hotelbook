@@ -1,0 +1,24 @@
+
+<%- layout('layouts/boilerplate') %>
+<body>
+    <div class="row">
+        <div class="col-8 offset-2 mb-3 mt-3">
+            <form class="col-6 offset-2" action="/users/signup" method="POST">
+                <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" name="user[email]" class="form-control" id="exampleInputEmail1" >
+                <div id="emailHelp"  class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="username" class="form-label">Username</label>
+                    <input type="text" name="user[username]" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" name="user[password]" class="form-control" id="exampleInputPassword1">
+                </div>
+                <button type="submit" class="btn btn-primary">Sign Up</button>
+            </form>
+        </div>
+    </div>
+</body>
